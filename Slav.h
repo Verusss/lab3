@@ -15,13 +15,31 @@ private:
 	string _name;
 	int _id;
 
+
 public:
 	Slav();
 
-	static int counter() { return _counter; }
+	static int counter() 
+	{ 
+		return _counter; 
+	}
 	
-	string name() { return _name; }
-	int id() { return _id; }
+	string name() 
+	{ 
+		return _name; 
+	}
 
+	int id() 
+	{ 
+		return _id; 
+	}
+
+	enum enum_sex
+	{
+		female,
+		male
+	};
+
+	enum_sex sex();
 	string description();
 };
